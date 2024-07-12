@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* FACCIONES */
+
+
+
+.habilidad-facc {
+    font-weight: bold;
+    
+}
+
+.h4-facc{
+    font-family: Montserrat extrabold, sans-serif;  
+    text-transform: uppercase;
+    color: #e03737;
+}
+
+.btn-info{
+    font-family: Montserrat extrabold, sans-serif;
+    font-size:small;
+    text-transform: uppercase;
+    border-radius: 4px;
+            
+}
+
+.info-btn{
+    padding-bottom: 10px;    
+}
+
+/* .seccion-background {
+    background-color:whitesmoke;    
+} */
+
+.materiales-gallery-facc {
+    background-color:whitesmoke;    
+}
+
+
+.container-material-facc {
+    text-align: center; 
+    background-color:whitesmoke;
+    
+}
+
+
+.materiales-gallery-facc {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.title-materials-facc {
+    text-align: center;
+    margin: 0;
+    font-family: Montserrat extrabold, sans-serif;
+    padding-top: 20px;
+    font-size:medium;
+    text-transform: uppercase;
+}
+
+.destacada-facc-zombie {
+    text-align: center;
+    margin: 0;
+    font-family: Montserrat extrabold, sans-serif;
+    padding-top: 20px;
+    font-size:medium;
+    text-transform: uppercase;
+    color: #643b23;
+}
+
+.destacada-facc-ninja {
+    text-align: center;
+    margin: 0;
+    font-family: Montserrat extrabold, sans-serif;
+    padding-top: 20px;
+    font-size:medium;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.destacada-facc-mito {
+    text-align: center;
+    margin: 0;
+    font-family: Montserrat extrabold, sans-serif;
+    padding-top: 20px;
+    font-size:medium;
+    text-transform: uppercase;
+    color: #1f115c;
+}
+
+.destacada-facc-mounstro {
+    text-align: center;
+    margin: 0;
+    font-family: Montserrat extrabold, sans-serif;
+    padding-top: 20px;
+    font-size:medium;
+    text-transform: uppercase;
+    color: #143625;
+}
+
+.párrafo-materials-facc {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    text-align:center;
+    margin: 20px;
+    padding-top: 0 8px;
+    font-size: small;
+
+    color: #6b6b6b;
+}
+
+.destaque-facc {
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    text-align:initial;
+    margin: 10px;
+    padding-top: 0 8px;
+    font-size: small;
+    color: #e03737;
+}
+
+.gallery-facc {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;    
+    /* align-items: start; */
+    margin: 10px;
+}
+
+/* .content-gallery-facc {
+    width: 100%; 
+    margin-right: 5px;   
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    justify-content: center;    
+    align-items:start;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+    background: #f2f2f2;
+} */
+
+.content-gallery-facc:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+
+.content-gallery-zombie-facc {
+    width: 100%; 
+    margin-right: 5px;   
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    justify-content: center;    
+    align-items:start;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+    background: #111111;
+}
+
+.content-gallery-ninja-facc {
+    width: 100%; 
+    margin-right: 5px;   
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    justify-content: center;    
+    align-items:start;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+    background: #111111;
+}
+
+.content-gallery-mito-facc {
+    width: 100%; 
+    margin-right: 5px;   
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    justify-content: center;    
+    align-items:start;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+    background: #111111;
+}
+
+.content-gallery-mounstro-facc {
+    width: 100%; 
+    margin-right: 5px;   
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    justify-content: center;    
+    align-items:start;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+    background: #111111;
+}
+
+.content-gallery-zombie-facc:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+
+.content-gallery-ninja-facc:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+
+.content-gallery-mito-facc:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+
+.content-gallery-mounstro-facc:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+
+.img-facc{
+    width: 70%;
+    height: auto; 
+    text-align: left;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+
+}
+
+.img-facc {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out; /* Transición suave para el filtro */
+}
+
+/* Cambia la imagen a color cuando se hace hover */
+.img-facc:hover {
+    filter: grayscale(0%);
+}
+
+/* Estilos para pantallas más pequeñas (menos de 768px) */
+@media screen and (max-width: 1000px) {
+    .content-gallery-facc {
+        width: 45%; /* Ajusta el ancho para mostrar dos imágenes por fila */
+    }
+    .materiales-gallery-facc {
+        display: flex;
+        flex-wrap: wrap;      
+    }
+    .img-gallery-facc{
+        object-fit: cover;
+    }
+
+    .img-gallery-facc {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease-in-out; /* Transición suave para el filtro */
+    }
+    
+    /* Cambia la imagen a color cuando se hace hover */
+    .img-gallery-facc:hover {
+        filter: grayscale(0%);
+    }
+    
+}
+
+/* Estilos para pantallas aún más pequeñas (menos de 480px) */
+@media screen and (max-width: 480px) {
+    .content-gallery-facc {
+        width: 90%; /* Muestra una imagen por fila */
+    }
+    .materiales-gallery-facc {
+        display: flex;
+        flex-wrap: wrap;      
+    }
+    .img-gallery-facc{
+        object-fit: cover;
+    }
+
+    .img-gallery-facc {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease-in-out; /* Transición suave para el filtro */
+    }
+    
+    /* Cambia la imagen a color cuando se hace hover */
+    .img-gallery-facc:hover {
+        filter: grayscale(0%);
+    }
+    
+}

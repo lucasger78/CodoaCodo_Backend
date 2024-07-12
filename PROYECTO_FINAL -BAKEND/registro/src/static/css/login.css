@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.materiales-gallery {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+}
+
+.gallery.form {
+    max-width: 400px; /* Define el ancho máximo del formulario */
+    /*padding: 20px;  Agrega espacio alrededor del formulario */
+    background-color: #f0f0f0; /* Color de fondo opcional */
+}
+
+.form-text {
+    font-family: Montserrat extrabold, sans-serif;
+    font-size:small;
+    text-transform: uppercase;
+}
+
+.form-text-title {
+    font-family: Montserrat extrabold, sans-serif;
+    font-size:large;
+    text-transform: uppercase;
+}
+
+.form-content label {
+    display: inline-block;
+    width: 120px; /*Ancho fijo para las etiquetas*/
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+
+
+
+

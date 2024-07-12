@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">     
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/registro.css') }}"> -->
+
+    <title>Registro</title>
+</head>
+<body>
+
+<h1 class="text-center mt-5 mb-5 text-dark" style="font-family: Montserrat Black">Registrate</h1>
+
+<div class="container materiales-gallery">
+    <div class="card shadow gallery form">
+        <div class="card-body content-gallery">
+            <h2 class="form-text-title" style="font-family: Montserrat Black">Formulario de registro</h2>
+            <p class="form-text-p" style="font-family: Montserrat">Completa los campos para suscribirte:</p>
+
+            <form action="{{ url_for('registro') }}" method="post" enctype="multipart/form-data">
+                <div class="row mb-3">
+                    <div class="col">
+                        <label class="label-register" style="font-family: Montserrat" for="avatar">Subí tu Avatar:</label>
+                        <input type="file" class="form-control mb-3" id="avatar" name="avatar">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label class="label-register" style="font-family: Montserrat" for="usuario">Usuario:</label>
+                        <input type="text" class="form-control mb-3" id="usuario" name="usuario" placeholder="Ingrese usuario...">
+                    </div>
+                    <div class="col">
+                        <label class="label-register" style="font-family: Montserrat" for="nombre">Nombre y Apellido:</label>
+                        <input type="text" class="form-control mb-3" id="nombre" name="nombre" placeholder="Ingrese nombre y apellido...">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label class="label-register" style="font-family: Montserrat" for="contraseña">Contraseña:</label>
+                        <input type="password" class="form-control mb-3" id="contraseña" name="contraseña" placeholder="Ingrese contraseña...">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label class="label-register" style="font-family: Montserrat" for="fecha_de_nacimiento">Fecha de nacimiento:</label>
+                        <input type="date" class="form-control mb-3" id="fecha_de_nacimiento" name="fecha_de_nacimiento" placeholder="(dd/mm/aaaa)">
+                    </div>
+                    <div class="col">
+                        <label class="label-register" style="font-family: Montserrat" for="email">Email:</label>
+                        <input type="text" class="form-control mb-3" id="email" name="email" placeholder="Ingrese email...">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label class="label-register" style="font-family: Montserrat" for="ciudad">Ciudad:</label>
+                        <input type="text" class="form-control mb-3" id="ciudad" name="ciudad" placeholder="Ingrese ciudad...">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label class="label-register" style="font-family: Montserrat" for="sexo">Sexo:</label>
+                        <select class="form-control mb-3" id="sexo" name="sexo">
+                            <option style="font-family: Montserrat" value="hombre">Hombre</option>
+                            <option style="font-family: Montserrat" value="mujer">Mujer</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <button class="btn btn-danger mb-3" style="font-family: Montserrat" type="submit"><b>Registrarse</b></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<h2 class="text-center mt-5 mb-5 text-dark" style="font-family: Montserrat Black">Usuarios Registrados</h2>
+
+<div class="container materiales-gallery">
+    <div class="card shadow gallery form">
+        <div class="card-body content-gallery">
+            <!--TABLA DE USUARIOS REGISTRADOS-->
+            <table class="table table-bordered container materiales-gallery">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Avatar</th>
+                        <th scope="col">Usuario</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Contraseña</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for d in data %}
+                    <tr>
+                        <td>{{ d.id }}</td>
+                        <td><img src="{{ url_for('uploaded_file', filename=d.avatar) }}" alt="Avatar" style="width:50px; height:50px;"></td>
+                        <td>{{ d.usuario }}</td>
+                        <td>{{ d.nombre }}</td>
+                        <td>{{ d.contraseña }}</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm" id="btn-edit{{ d.id }}" data-bs-toggle="modal" data-bs-target="#modal{{ d.id }}">Edit</button>
+                        </td>
+                        <td><a href="{{ url_for('delete', id=d.id) }}" class="btn btn-danger btn-sm">Delete</a></td>
+                    </tr>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal{{ d.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">{{ d.usuario }}</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="{{ url_for('edit', id=d.id) }}" method="post" enctype="multipart/form-data">
+                                        <label>Avatar</label>
+                                        <img src="{{ url_for('uploaded_file', filename=d.avatar) }}" alt="Avatar" style="max-width: 100px;"><!-- Mostrar imagen actual -->
+                                        <input type="file" class="form-control mb-3" name="avatar">
+                                        <label>Usuario</label>
+                                        <input type="text" class="form-control mb-3" name="usuario" value="{{ d.usuario }}">
+                                        <label>Nombre</label>
+                                        <input type="text" class="form-control mb-3" name="nombre" value="{{ d.nombre }}">
+                                        <label>Contraseña</label>
+                                        <input type="text" class="form-control mb-3" name="contraseña" value="{{ d.contraseña }}">
+                                        <label>Fecha de Nacimiento</label>
+                                        <input type="date" class="form-control mb-3" name="fecha_de_nacimiento" value="{{ d.fecha_de_nacimiento }}">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control mb-3" name="email" value="{{ d.email }}">
+                                        <label>Ciudad</label>
+                                        <input type="text" class="form-control mb-3" name="ciudad" value="{{ d.ciudad }}">
+                                        <label>Sexo</label>
+                                        <select class="form-control mb-3" name="sexo">
+                                            <option value="hombre" {% if d.sexo == 'hombre' %}selected{% endif %}>Hombre</option>
+                                            <option value="mujer" {% if d.sexo == 'mujer' %}selected{% endif %}>Mujer</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-primary">Save changes</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<br> 
+     <!-- ===== END SLIDE CARDS ===== -->  
+    
+
+    <!-- === FOOTER === -->
+   <!-- <footer style="z-index: 999;">        
+        <div class="container-footer">
+            <div class="footer-content">
+                <h3 class="title-footer">Contact Us</h3>
+                <ul class="list-footer">                
+                    <li><i class="fa fa-envelope"></i><a href="mailto:cartascustomiza@gmail.com" target="_blank"> cartascustomiza@gmail.com</a></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                      </svg><a href="https://wa.link/ie7jd2" target="_blank"> +121 56556 565556</a></li><br>
+                    <li><i class="fa fa-map-marker"></i><a href="https://maps.app.goo.gl/UsooKo35hemVnbaFA" target="_blank"> 742 Evergreen Terrace</a></li>                    
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3 class="title-footer">Quick Links</h3>
+                 <ul class="list-footer">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="cards.html">Cartas</a></li>
+                    <li><a href="users.html">Usuarios</a></li>
+                    <li><a href="semana.html">Ganadores</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                 </ul>
+            </div>
+            <div class="footer-content">
+                <h3 class="title-footer">Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.tiktok.com/" target="_blank"><span class="fa-brands--tiktok"></span></a></li>
+                    <li><a href="https://www.x.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 CaC => Nancy| Lucas | Antonella | Conrado | Mauricio. || All rights reserved</p>
+        </div>
+    </footer> -->
+    <!-- === END FOOTER === -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+eIksSk1KrGkVQnTjt4Kx6LNczR4" crossorigin="anonymous"></script>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<script src="{{ url_for('static', filename='js/js-validation.js') }}"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.carta {
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    height: 60%;   
+   
+}
+
+.carta form input,
+.carta form textarea {
+    width: 90%;
+    border: none;
+    background: none;
+    outline: 0;
+    border-bottom: 1px solid #dc3545;
+}
+
+.carta form button{
+    background: #dc3545;
+    color:#f2f2f2;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.carta form button:hover,
+.carta form button:focus {
+    background: #ad0d1d;
+    color:#f18930;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.typeFile{
+    border-bottom: none !important;
+    text-align: center !important;
+}
+
+@media (max-width: 900px) {
+    .card-edit-form{
+        margin-top: 70px;
+    }
+}

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* GALERIA DE CARTAS */
+
+.btn-info{
+    font-family: Montserrat extrabold, sans-serif;
+    font-size:small;
+    text-transform: uppercase;
+    border-radius: 4px;
+            
+}
+
+
+
+.materiales-gallery {
+    background-color:whitesmoke;    
+}
+
+
+.container-material {
+    text-align: center; 
+    background-color:whitesmoke;
+    
+}
+
+
+.materiales-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;    
+    /* align-items: start; */
+    margin: 10px;
+}
+
+.content-gallery {
+    width: 100%; 
+    margin-right: 5px;   
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    /* border-radius: 20px; */
+    justify-content: center;    
+    align-items:start;
+    /* cursor: pointer; */
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+    background: #f2f2f2;
+}
+
+.content-gallery:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+
+
+
+/* Estilos para pantallas más pequeñas (menos de 768px) */
+@media screen and (max-width: 1000px) {
+    .content-gallery {
+        width: 45%; /* Ajusta el ancho para mostrar dos imágenes por fila */
+    }
+    .materiales-gallery {
+        display: flex;
+        flex-wrap: wrap;      
+    }
+    
+    
+}
+
+/* Estilos para pantallas aún más pequeñas (menos de 480px) */
+@media screen and (max-width: 480px) {
+    .content-gallery {
+        width: 90%; /* Muestra una imagen por fila */
+    }
+    .materiales-gallery {
+        display: flex;
+        flex-wrap: wrap;      
+    }
+    
+    
+}
+
+@media (max-width: 900px) {
+    .p-slide {
+        display: none;
+    }
+    
+    .img-slide {
+        width: 100%;
+    }
+}
+
